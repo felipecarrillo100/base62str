@@ -25,6 +25,6 @@ If you prefer you can create an instance with inverted CharacterSet:
 ```
 ### Decoding:
 ```javascript
-   const decodedString = base62.encodeStr(encodedString);
+   const decodedString = base62.decodeStr(encodedString);
    // decodedString => Hello World!
 ```
