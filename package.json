@@ -1,0 +1,13 @@
+{
+  "name": "base62str",
+  "version": "1.0.0",
+  "description": "Encode a string into a base62 string.  Decode a base62 string back to a decoded string. It can also code arrays of bytes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Carrillo",
+  "license": "MIT"
+}
