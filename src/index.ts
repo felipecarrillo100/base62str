@@ -169,9 +169,9 @@ class Base62Str {
 
         for (let i = 0; i < 256; i++) {
             // tslint:disable-next-line:no-bitwise
-            this.lookup[this.alphabet[i]] = (i & 0xFF);
+            lookup[this.alphabet[i]] = (i & 0xFF);
         }
-		return lookup;
+	return lookup;
     }
 
 }
