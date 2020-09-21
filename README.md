@@ -8,6 +8,10 @@ npm install base62str
 ```javascript
 import Base62Str from "base62str";
 ```
+If you want to use the library in nodejs then use require as follows:
+```javascript
+const Base62Str = require("base62str").default;
+```
 ## To use
 ### Create an instance
 First create an instance: 
