@@ -1,18 +1,23 @@
 {
   "name": "base62str",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Encode a string into a base62 string.  Decode a base62 string back to a decoded string. It can also code arrays of bytes.",
   "keywords": ["base62", "base-62", "encoding", "decoding", "url-encoding"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felipecarrillo100/base62str"
   },
   "author": "Felipe Carrillo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
 }
