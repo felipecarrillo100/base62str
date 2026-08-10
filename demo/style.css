@@ -276,7 +276,7 @@ textarea:focus {
 /* Ad slot */
 
 .ad-slot {
-  margin: 40px 0 0;
+  margin: 8px 0 24px;
   text-align: center;
   overflow: hidden;
 }
