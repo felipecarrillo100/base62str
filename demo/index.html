@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Base62 Encoder &amp; Decoder — base62str</title>
+  <meta name="description" content="Free online Base62 encoder and decoder. Convert any text to a Base62 string (letters and numbers only) and back, right in your browser." />
+  <meta property="og:title" content="Base62 Encoder & Decoder" />
+  <meta property="og:description" content="Free online Base62 encoder and decoder — no install, runs entirely in your browser." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">62</span>
+        <div>
+          <p class="brand-name">base62str</p>
+          <p class="brand-tag">Base62 Encoder &amp; Decoder</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="https://github.com/felipecarrillo100/base62str" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.npmjs.com/package/base62str" target="_blank" rel="noopener">npm</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Encode and decode Base62 online</h1>
+        <p>Paste any text, convert it to a Base62 string that contains only letters and numbers, and convert it back — instantly, in your browser. Nothing is sent to a server.</p>
+      </section>
+
+      <div id="tool-root"></div>
+
+      <section class="content">
+        <h2>What is Base62 encoding?</h2>
+        <p>Base62 encoding represents binary data using only 62 characters: digits <code>0-9</code>, uppercase letters <code>A-Z</code>, and lowercase letters <code>a-z</code>. Unlike Base64, it never introduces symbols such as <code>+</code>, <code>/</code>, or <code>=</code>, so the result is always safe to use directly in URLs, filenames, and identifiers without any extra escaping.</p>
+
+        <h2>Base62 vs Base64</h2>
+        <p>Base64 packs data slightly more densely, but its output can include <code>+</code>, <code>/</code>, and padding <code>=</code> characters that need escaping in URLs and query strings. Base62 trades a little density for an alphanumeric-only output — a common choice for short IDs, slugs, and tokens that need to look clean in a URL.</p>
+
+        <h2>Use it in your project</h2>
+        <pre><code>npm install base62str</code></pre>
+        <pre><code>import Base62Str from "base62str";
+
+const base62 = Base62Str.createInstance();
+base62.encodeStr("Hello World!"); // "T8dgcjRGkZ3aysdN"
+base62.decodeStr("T8dgcjRGkZ3aysdN"); // "Hello World!"</code></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>If base62str saved you time, consider supporting its development:</p>
+      <div class="support">
+        <a href="https://buymeacoffee.com/felipecarrillo100" target="_blank" rel="noopener">
+          <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="36" />
+        </a>
+        <a href="https://github.com/sponsors/felipecarrillo100" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-ff69b4?style=for-the-badge&logo=github" alt="Sponsor on GitHub" height="36" />
+        </a>
+      </div>
+      <p class="powered-by">Powered by <a href="https://www.npmjs.com/package/base62str" target="_blank" rel="noopener">base62str</a> — MIT licensed</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./main.tsx"></script>
+</body>
+</html>

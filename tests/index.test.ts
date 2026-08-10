@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import Base62Str from "../src/index";
 
 const base62 = Base62Str.createInstance();
