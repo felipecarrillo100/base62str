@@ -4,7 +4,7 @@
 
 Encode/Decode strings to Base62 strings. Useful to convert any string to an encoded string that only contains letters and numbers.
 
-**[Live Demo](https://felipecarrillo100.github.io/base62str/)**
+🔢 [Try the Live Demo](https://felipecarrillo100.github.io/base62str/) — Encode & decode Base62 strings instantly, right in your browser.
 
 ## How to install:
 npm install base62str
